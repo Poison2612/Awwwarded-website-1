@@ -1,0 +1,68 @@
+@font-face {
+    font-family: Futura;
+    src: url(./Futura-Bold.ttf);
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(./Gilroy-Medium.ttf);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 20vh;
+    position: relative;
+    /* background-color: aquamarine; */
+}
+
+#page1 h1{
+    font-size: 15.8vmax;
+    text-transform: uppercase;
+    font-family: Futura;
+    line-height: 14vw;
+    letter-spacing: -6px;
+    overflow: hidden;
+    font-weight: bolder;
+}
+
+.video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: grey;
+    margin-top: 1vh;
+    position: relative;
+}
+
+.video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#play{
+    padding: 3vw 2.2vw;
+    background-color: black;
+    color: #fff;
+    font-size: 1.3vw;
+    font-family: Futura;
+    border-radius: 50%;
+    position: fixed;
+    text-transform: uppercase;
+    scale: 0;
+    opacity: 0;
+}
