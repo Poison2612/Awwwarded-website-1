@@ -10,59 +10,114 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy';
 }
-*::selection{
-    color: #fff;
-    background-color: #000;
-}
-
 html,body{
     height: 100%;
     width: 100%;
 }
-
 #page1{
     min-height: 100vh;
     width: 100%;
-    padding: 0 1vw;
-    padding-top: 20vh;
+    padding: 0 2vw;
+    padding-top: 15vw;
     position: relative;
-    /* background-color: aquamarine; */
+
 }
 
 #page1 h1{
-    font-size: 15.8vmax;
+    font-family: 'Futura';
+    font-size: 15vw;
     text-transform: uppercase;
-    font-family: Futura;
-    line-height: 14vw;
-    letter-spacing: -6px;
-    overflow: hidden;
-    font-weight: bolder;
+    line-height: 13vw;
+    text-align: center;
 }
-
-.video-container{
+#video-container{
     height: 100vh;
     width: 100%;
-    background-color: grey;
-    margin-top: 1vh;
+    margin-top: 1vw;
     position: relative;
 }
-
-.video-container video{
+#video-container video{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 #play{
-    padding: 3vw 2.2vw;
-    background-color: black;
-    color: #fff;
-    font-size: 1.3vw;
-    font-family: Futura;
+    font-family: 'Futura';
+    font-size: 1.5vw;
+    position: absolute;
     border-radius: 50%;
-    position: fixed;
+    padding: 3vw 2vw;
+    color: #fff;
     text-transform: uppercase;
-    scale: 0;
+    background-color: #000;
     opacity: 0;
+    scale: 0;
+}
+  
+#page2{
+    height: 100vh;
+    width: 100%;
+    padding: 3vw 2vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem{
+    height: 100%;
+    width: 32%;
+    overflow: hidden;
+}
+
+.elem img{
+    height: 100%; 
+    object-fit: cover;
+    scale: 1.2;
+
+}
+
+@media (max-width: 600px){
+    #page1{
+        min-height: 70vh;
+        width: 100%;
+        padding: 0 3vw;
+        padding-top: 40vw;
+        position: relative;
+    
+    }
+    #page1 h1{
+        font-family: 'Futura';
+        font-size: 14vw;
+        text-transform: uppercase;
+        line-height: 15vw;
+        text-align: center;
+    }
+    #video-container{
+        height: 25vh;
+        width: 100%;
+        margin-top: 12vw;
+        position: relative;
+    }
+    #play{
+        font-family: 'Futura';
+        font-size: 6.5vw;
+        position: absolute;
+        padding: 10vw 5vw;
+        opacity: 1;
+        scale: 1;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+    }
+    #page2{
+        height: 100vh;
+        width: 100%;
+        padding: 2vw 3vw;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
 }
