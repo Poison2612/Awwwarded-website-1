@@ -67,9 +67,9 @@ nav .part-2{
 }
 
 #cursor{
-    height: 150px;
-    width: 150px;
-    background-color: blanchedalmond;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(254, 119, 0, 0.433);
     border-radius: 50%;
     position: fixed;
     transform: translate(-50px,-50px) scale(0);
@@ -140,7 +140,7 @@ nav .part-2{
 
 }
 .elem .dets{
-    height: 60px;
+    height: 4vw;
     width: 80%;
     border-radius: 50px;
     background-color: blanchedalmond;
@@ -148,12 +148,68 @@ nav .part-2{
     position: absolute;
 }
 
+.dets .top{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.3vw 0vw;
+}
+.top h4{
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.top h4.bold{
+    font-weight: 900;
+}
+
+.top i{
+    font-size: 14px;
+}
+
+i#arrow{
+    font-size: 25px;
+}
 .elem .dets:hover{
     height: 300px;
 }
+.dets .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3vw 0vw;
+    width: 100%;
+    height: 85%;
+    border-radius: 50px;
+    visibility: hidden;
+}
+.dets:hover .bottom{
+    visibility: visible;
+}
+.bottom .img-cont{
+    height: 100%;
+    width: 50%;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+
+}
+.img-cont img{
+    height: 65%;
+}
+.img-cont h5{
+    font-size: 10px;
+    width: 80%;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}
 
 #page3{
-    height: 170vh;
+    height: 200vh;
     width: 100%;
     /* padding: 3vw 2vw; */
     position: relative;
@@ -161,10 +217,23 @@ nav .part-2{
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    gap: 5vw;
+    margin: 3vw auto;
 }
 .child{
     height: 54vh;
     width: 38vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.child h5{
+    font-size: 0.8vw;
+    font-weight: 100;
+    text-transform: uppercase;
 }
 .child img{
     height: 100%;
@@ -214,7 +283,6 @@ nav .part-2{
 #page5 .part5-1{
     width: 70%;
     font-size: 3.9vw;
-    padding-bottom: 6vw;
 }
 .part5-1  h4{
     width: 100%;

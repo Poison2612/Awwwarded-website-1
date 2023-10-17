@@ -58,7 +58,6 @@ function playVideo() {
   
   });
 };
-
 playVideo();
 
 function loadingAnimaiton() {
@@ -129,4 +128,3 @@ function navbarAnimation() {
       }});
   }
   navbarAnimation();
-
