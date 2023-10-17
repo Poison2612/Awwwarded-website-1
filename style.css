@@ -1,3 +1,4 @@
+
 @font-face {
     font-family: Futura;
     src: url(./Futura-Bold.ttf);
@@ -14,6 +15,64 @@
 html,body{
     height: 100%;
     width: 100%;
+    background-color: #f7f7f7;
+    font-family: "Helvetica Now Text", "Lucida Sans", Tahoma, sans-serif;
+}
+*::selection{
+    color: #fff;
+    background-color: #000;
+}
+nav{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    padding: 1.5vw 1.5vw 0vw 1.5vw ;
+    align-items: center;
+    justify-content: space-between;
+    
+    z-index: 999;
+}
+nav .part-1{
+    
+    height: 5.8vw;
+    overflow: hidden;
+}
+nav .part-1 svg{
+    display: block;  
+}
+nav .part-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin-top: -5vw;
+}
+#links a{
+    margin: 40px;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+}
+#icons{
+    background-color: #f7f7f7;
+    padding: 0.5vw;
+    border-radius: 50px;
+}
+#icons i{
+    margin: 20px;
+    font-size: 18px;
+
+
+}
+
+#cursor{
+    height: 150px;
+    width: 150px;
+    background-color: blanchedalmond;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50px,-50px) scale(0);
 }
 #page1{
     min-height: 100vh;
@@ -68,6 +127,10 @@ html,body{
     height: 100%;
     width: 32%;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .elem img{
@@ -76,6 +139,113 @@ html,body{
     scale: 1.2;
 
 }
+.elem .dets{
+    height: 60px;
+    width: 80%;
+    border-radius: 50px;
+    background-color: blanchedalmond;
+    z-index: 9;
+    position: absolute;
+}
+
+.elem .dets:hover{
+    height: 300px;
+}
+
+#page3{
+    height: 170vh;
+    width: 100%;
+    /* padding: 3vw 2vw; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.child{
+    height: 54vh;
+    width: 38vw;
+}
+.child img{
+    height: 100%;
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vw;
+
+}
+#page4 h2{
+    font-family: 'Futura';
+    font-size: 4.8vw;
+    width: 90%;
+    text-align: center;
+}
+#page4 .btn{
+    height: 4vw;
+    width: 20vw;
+    padding: 1.5vw 4vw;
+    font-size: 13px;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+}
+#page4 h4{
+    font-weight: 100;
+    width: 19%;
+    text-align: center;
+}
+#page5{
+    height: 60vh;
+    width: 100%;
+    padding: 3vw 2vw;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#page5 .part5-1{
+    width: 70%;
+    font-size: 3.9vw;
+    padding-bottom: 6vw;
+}
+.part5-1  h4{
+    width: 100%;
+}
+
+#page5 .part5-2{
+    width: 30%;
+}
+.part5-2 p{
+    width: 80%;
+    font-size: 1vw;
+    font-weight: 100;
+    margin: 1.5vw;
+    line-height: 1.5;
+}
+
+.ul{
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 600px){
     #page1{
@@ -111,13 +281,25 @@ html,body{
         left: 50%;
     }
     #page2{
-        height: 100vh;
+        min-height: 100vh;
         width: 100%;
-        padding: 2vw 3vw;
+        padding: 3vw 2vw;
         position: relative;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .elem{
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 3vw;
+    }
+    
+    .elem img{
+        height: 100%; 
+        width: 100%;
+        object-fit: cover;
+        scale: 1.2;
+    
     }
 }
