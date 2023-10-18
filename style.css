@@ -304,6 +304,24 @@ i#arrow{
     text-decoration: underline;
 }
 
+#page6{
+    height: 100vh;
+    width: 100%;
+    position: realtive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.part6-l{
+    width: 40%;
+    background-color: chartreuse;
+}
+.part6-r{
+    width: 60%;
+    background-color: coral;
+    display: flex;
+    align-items: center;
+}
 
 
 
